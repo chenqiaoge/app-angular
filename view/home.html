@@ -1,0 +1,38 @@
+
+	<div class="bar bar-header bar-calm">
+	  <h1 class="title">每日优鲜<a href="#address">address</a></h1>
+		  <button class="button button-clear button-white">Search</button>
+	</div>
+	<ion-content class="has-header has-footer">
+		<ion-scroll direction="x" zooming="true" scrollbar-x="false" style="width:100%;height:40px">	
+		<div class="row" style="width:150%;height:40px">
+		  <div class="col">新春特惠</div>
+		  <div class="col">水果</div>
+		  <div class="col">肉蛋</div>
+		  <div class="col">水产</div>
+		  <div class="col">蔬菜</div>
+		  <div class="col">肉蛋</div>
+		  <div class="col">水产</div>
+		  <div class="col">蔬菜</div>
+		</div>
+		</ion-scroll>
+		<ion-slide-box class="slide-wrapper" does-continue>
+		  <ion-slide>
+		    <div class="box">
+				
+		    <img class="image" src="http://missfresh-asvip-production-common.ufile.ucloud.com.cn/entrance_images/3CB970E94124002CB907488AD797B4DC.JPG?iopcmd=thumbnail&type=4&width=640" alt=""></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box"><img class="image" src="http://missfresh-asvip-production-common.ufile.ucloud.com.cn/entrance_images/E093FC2CBCC80B603BC6CF7727B3BE23.JPG?iopcmd=thumbnail&type=4&width=640" alt=""></div>
+		  </ion-slide>
+		  
+		</ion-slide-box>
+		
+		<div class="list" id="productList">
+
+		<single-product ng-repeat="item in homeData" item="item"></single-product>
+		</div>
+	</ion-content>	
+	
+
+	

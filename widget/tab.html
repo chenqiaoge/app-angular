@@ -1,0 +1,9 @@
+
+<div class="tabs tabs-icon-top tabs-calm">
+  <a href="{{item.link}}" class="tab-item" ng-repeat="item in list" ng-class="{'active':item.active}" ng-click="getStatus($index)">
+    <i class="icon {{item.icon}}"></i>
+    <span class="tab-cartNum" style="display: {{item.isShow}}">{{CartNum || 0}}</span>
+    {{item.name}}
+  </a>
+  
+</div>

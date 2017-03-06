@@ -1,0 +1,11 @@
+
+	<div class="bar bar-header bar-calm">
+	  <h1 class="title">每日优鲜 -- <span>{{name}}</span></h1>	  
+	</div>
+	<ion-content class="has-header has-footer">
+		<div class="list" id="productList">
+			<single-product ng-repeat="item in list" item="item" list="list" index="$index"></single-product>
+		</div>
+
+		
+	</ion-content>
